@@ -39,6 +39,9 @@ const NavigationBar = () => {
             <Link to="/repair" className={classes.link}>
               Repair
             </Link>
+            <Link to="/employee" className={classes.link}>
+              Employee
+            </Link>
           </div>
         </Toolbar>
       </AppBar>
