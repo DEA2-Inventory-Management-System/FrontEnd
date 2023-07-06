@@ -70,7 +70,7 @@ export const styles = makeStyles((theme) => ({
   displayButton: {
     width: "100%",
     height: "50px",
-    backgroundColor: "#ff9200",
+    backgroundColor: "#ff9201",
   },
   listTable: {
     paddingTop: "10px",
