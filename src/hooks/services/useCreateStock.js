@@ -1,9 +1,9 @@
 import { useMutation, useQueryClient } from "react-query";
 import axios from "axios";
 
-const useCreateRepair = () => {
+const useCreateStock = () => {
   const QueryClient = useQueryClient();
-  const repairUrl = "http://localhost:8080/repair";
+  const repairUrl = "http://localhost:8080/stock";
 
   return useMutation(
     async (obj) => await axios.post(repairUrl, obj),
@@ -20,4 +20,4 @@ const useCreateRepair = () => {
   );
 };
 
-export default useCreateRepair;
+export default useCreateStock;

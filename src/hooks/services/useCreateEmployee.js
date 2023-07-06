@@ -1,12 +1,12 @@
 import { useMutation, useQueryClient } from "react-query";
 import axios from "axios";
 
-const useCreateRepair = () => {
+const useCreateEmployee = () => {
   const QueryClient = useQueryClient();
-  const repairUrl = "http://localhost:8080/repair";
+  const url = "http://localhost:8080/employee";
 
   return useMutation(
-    async (obj) => await axios.post(repairUrl, obj),
+    async (obj) => await axios.post(url, obj),
     {
       onSuccess: async () => {
         QueryClient.invalidateQueries();
@@ -20,4 +20,4 @@ const useCreateRepair = () => {
   );
 };
 
-export default useCreateRepair;
+export default useCreateEmployee;

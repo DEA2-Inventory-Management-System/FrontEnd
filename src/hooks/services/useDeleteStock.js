@@ -1,12 +1,13 @@
 import { useMutation, useQueryClient } from "react-query";
 import axios from "axios";
 
-const useCreateRepair = () => {
+const useDeleteStock = ({ id }) => {
   const QueryClient = useQueryClient();
-  const repairUrl = "http://localhost:8080/repair";
+  const deleteStock = `http://localhost:8080/stock/${id}`;
 
   return useMutation(
-    async (obj) => await axios.post(repairUrl, obj),
+    (obj) =>
+      axios.delete(deleteStock, JSON.stringify(obj)).then((x) => x.json()),
     {
       onSuccess: async () => {
         QueryClient.invalidateQueries();
@@ -20,4 +21,4 @@ const useCreateRepair = () => {
   );
 };
 
-export default useCreateRepair;
+export default useDeleteStock;

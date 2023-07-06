@@ -21,32 +21,26 @@ const NavigationBar = () => {
             Fujicraft Inventory Management System
           </Typography>
           <div className={classes.navlinks}>
-            <Link to="/home" className={classes.link}>
+            {/* <Link to="/home" className={classes.link}>
               Home
             </Link>
             <Link to="/printer" className={classes.link}>
               Printer
-            </Link>
-            <Link to="/deliveryNote" className={classes.link}>
+            </Link> */}
+            {/* <Link to="/deliveryNote" className={classes.link}>
               Delivery Note
-            </Link>
+            </Link> */}
             <Link to="/invoice" className={classes.link}>
-              Invoice
+              PurchaseOrder
             </Link>
             <Link to="/purchaseOrder" className={classes.link}>
-              PO
-            </Link>
-            <Link to="/repair" className={classes.link}>
-              Repair
+              Stock
             </Link>
             <Link to="/employee" className={classes.link}>
               Employee
             </Link>
-            <Link to="/login" className={classes.link}>
-              Login
-            </Link>
-            <Link to="/registration" className={classes.link}>
-            Registration
+            <Link to="/repair" className={classes.link}>
+              Repair
             </Link>
           </div>
         </Toolbar>
