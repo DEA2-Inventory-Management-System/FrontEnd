@@ -16,6 +16,7 @@ import ListDeliveryNote from "../../pages/DeliveryNote/List-DeliveryNote";
 import { DeliveryNotePrinter } from "../../pages/DeliveryNotePrinter";
 import Repair from "../../pages/Repair";
 import Employee from "../../pages/Employee";
+import Login from "../../pages/Login";
 
 const AppRouter = () => {
   const router = createBrowserRouter(
@@ -29,6 +30,7 @@ const AppRouter = () => {
         <Route path="deliveryNotePrinter" element={<DeliveryNotePrinter />} />
         <Route path="repair" element={<Repair />} />
         <Route path="employee" element={<Employee />} />
+        <Route path="login" element={<Login />} />
       </Route>
     )
   );
