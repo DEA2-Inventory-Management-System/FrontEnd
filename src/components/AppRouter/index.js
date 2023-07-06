@@ -15,6 +15,7 @@ import ManageInvoice from "../../pages/Invoice/Manage-Invoice";
 import ListDeliveryNote from "../../pages/DeliveryNote/List-DeliveryNote";
 import { DeliveryNotePrinter } from "../../pages/DeliveryNotePrinter";
 import Repair from "../../pages/Repair";
+import { CreateRepair } from "../../pages/CreateRepair";
 import Employee from "../../pages/Employee";
 import Login from "../../pages/Login";
 
@@ -29,6 +30,7 @@ const AppRouter = () => {
         <Route path="deliveryNote" element={<ListDeliveryNote />} />
         <Route path="deliveryNotePrinter" element={<DeliveryNotePrinter />} />
         <Route path="repair" element={<Repair />} />
+        <Route path="createRepair" element={<CreateRepair />} />
         <Route path="employee" element={<Employee />} />
         <Route path="login" element={<Login />} />
       </Route>

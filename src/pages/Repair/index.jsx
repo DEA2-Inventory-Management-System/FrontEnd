@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 import Grid from "@material-ui/core/Grid";
 import { Button } from "@material-ui/core";
@@ -91,12 +92,33 @@ const data = [
 ];
 
 const Repair = () => {
+
+  const navigate = useNavigate();
   const classes = styles();
   const location = useLocation();
   console.log("location", location);
 
+  const handleCreateRepair = () => {
+    navigate(`/createRepair`);
+  }
+/*const handleCreateRepair = () => {
+    setOpenRepair(true);
+  };
+
+  const filteredRequestArray = requestData?.filter(
+    (element) => element.quantity > 0
+  );
+
+  let no = 0;
+  filteredRequestArray?.forEach((element) => {
+    element.item = `${element.itemName} ${element.itemColor}`;
+    no = no + 1;
+    element.no = no;
+  });
+*/
   return (
     <>
+    
       <Grid
         item
         container
@@ -108,10 +130,12 @@ const Repair = () => {
             Repair
           </Grid>
           <Grid item>
+           
             <Button
+              id="btn-create-repair"
               startIcon={<AddCircleOutlineIcon />}
               classes={{ root: classes.btn }}
-              // onClick={}
+              onClick={handleCreateRepair}
             >
               Add New Repair
             </Button>

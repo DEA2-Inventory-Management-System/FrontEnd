@@ -22,8 +22,8 @@ export const styles = makeStyles((theme) => ({
   link: {
     textDecoration: "none",
     color: "white",
-    fontSize: "20px",
-    marginLeft: theme.spacing(15),
+    fontSize: "15px",
+    marginLeft: theme.spacing(9),
     "&:hover": {
       color: "black",
     },
