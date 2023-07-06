@@ -21,44 +21,32 @@ const columns = [
     cellStyles: { textAlign: "center" },
   },
   {
-    Header: "Item",
-    accessor: "item",
+    Header: "Category",
+    accessor: "category",
     width: "25",
     headerStyles: { textAlign: "center" },
     cellStyles: { textAlign: "center" },
   },
   {
-    Header: "Quantity",
-    accessor: "Quantity",
+    Header: "Description",
+    accessor: "description",
     headerStyles: { textAlign: "center" },
     cellStyles: { textAlign: "center" },
     width: "25",
-  },
-  {
-    Header: "Rate",
-    accessor: "rate",
-    headerStyles: { textAlign: "center" },
-    cellStyles: { textAlign: "center" },
-    width: "25",
-  },
-  {
-    Header: "Balance",
-    accessor: "balance",
-    headerStyles: { textAlign: "center" },
-    cellStyles: { textAlign: "center" },
-    width: "25",
-  },
-  {
-    Header: "ItemCode",
-    accessor: "itemCode",
-    headerStyles: { textAlign: "center" },
-    cellStyles: { textAlign: "center" },
   },
   {
     Header: "Status",
     accessor: "status",
     headerStyles: { textAlign: "center" },
     cellStyles: { textAlign: "center" },
+    width: "25",
+  },
+  {
+    Header: "Date",
+    accessor: "date",
+    headerStyles: { textAlign: "center" },
+    cellStyles: { textAlign: "center" },
+    width: "25",
   },
   {
     Header: "Actions",
@@ -80,42 +68,28 @@ const columns = [
 const data = [
   {
     id: "1",
-    item: "1040 Handle",
-    rate: "100",
-    Quantity: "250",
+    category: "Laptop",
+    description: "Vivo notebook - Screen replacement",
     status: "completed",
+    date: "20-06-2023",
   },
   {
     id: "2",
-    item: "1040 Handle",
-    rate: "100",
-    status: "completed",
-    Quantity: "250",
+    category: "Phone",
+    description: "Nokia 6x - Display replacement",
+    status: "inprogress",
+    date: "20-06-2023",
   },
   {
     id: "3",
-    item: "1040 Handle",
-    rate: "100",
-    status: "Incompleted",
-    Quantity: "250",
-  },
-  {
-    id: "4",
-    item: "1040 Handle",
-    rate: "100",
-    status: "completed",
-    Quantity: "250",
-  },
-  {
-    id: "5",
-    item: "1040 Handle",
-    rate: "100",
-    status: "Incompleted",
-    Quantity: "250",
-  },
+    category: "TV",
+    description: "Samsung TV - not turning on",
+    status: "pending",
+    date: "20-06-2023",
+  }
 ];
 
-const Home = () => {
+const Repair = () => {
   const classes = styles();
   const location = useLocation();
   console.log("location", location);
