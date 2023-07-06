@@ -68,21 +68,21 @@ const columns = [
 
 const data = [
   {
-    id: "1",
+    id: "1325",
     category: "Laptop",
     description: "Vivo notebook - Screen replacement",
     status: "completed",
     date: "20-06-2023",
   },
   {
-    id: "2",
+    id: "1326",
     category: "Phone",
     description: "Nokia 6x - Display replacement",
     status: "inprogress",
     date: "20-06-2023",
   },
   {
-    id: "3",
+    id: "1327",
     category: "TV",
     description: "Samsung TV - not turning on",
     status: "pending",
@@ -105,7 +105,7 @@ const Repair = () => {
       >
         <Grid container justifyContent="space-between" className={classes.top}>
           <Grid item className={classes.heading}>
-            Purchase Order
+            Repair
           </Grid>
           <Grid item>
             <Button
@@ -113,7 +113,7 @@ const Repair = () => {
               classes={{ root: classes.btn }}
               // onClick={}
             >
-              New Stock
+              Add New Repair
             </Button>
           </Grid>
         </Grid>
@@ -121,7 +121,7 @@ const Repair = () => {
           <LazyLoadingTable
             columns={columns}
             data={data}
-            hiddenColumns={["itemCode", "id"]}
+            //hiddenColumns={["itemCode", "id"]}
             fontSize="24px"
             color="#FFFFFF"
           />
