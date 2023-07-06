@@ -68,40 +68,6 @@ const ListRepair = () => {
     },
   ];
 
-  return (
-    <Grid item container classes={{ container: classes.gridContainer }}>
-      <PageLayout
-        pageHeading={"Repair"}
-        pageActions={
-          <Grid>
-            <Button
-              id="btn-create-employee"
-              variant="contained"
-              onClick={handleCreateRepair}
-            >
-              <NoteAddTwoToneIcon className={classes.plusIcon} />
-              {"Create Repair"}
-            </Button>
-          </Grid>
-        }
-      >
-        <Grid item className={classes.section} xs={12}>
-          {repairData && (
-            <LazyLoadingTable
-              columns={columns}
-              data={repairData}
-              hiddenColumns={["id"]}
-              maxHeightInRows={10}
-              onClickTableRow={(index, row) => {
-                console.log(index, row);
-              }}
-              customProps={{ height: "1200px" }}
-            />
-          )}
-        </Grid>
-      </PageLayout>
-      <ManageEmployee setOpen={setOpenCreateRepair} open={openCreateRepair} />
-    </Grid>
-  );
+  
 };
 export default ListRepair;
