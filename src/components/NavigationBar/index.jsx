@@ -42,6 +42,9 @@ const NavigationBar = () => {
             <Link to="/employee" className={classes.link}>
               Employee
             </Link>
+            <Link to="/login" className={classes.link}>
+              Login & Registration
+            </Link>
           </div>
         </Toolbar>
       </AppBar>
