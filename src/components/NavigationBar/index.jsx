@@ -43,7 +43,7 @@ const NavigationBar = () => {
               Employee
             </Link>
             <Link to="/login" className={classes.link}>
-              Login & Registration
+              Login
             </Link>
           </div>
         </Toolbar>
