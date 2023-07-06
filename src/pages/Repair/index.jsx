@@ -9,7 +9,8 @@ import { useLocation } from "react-router-dom";
 import { IconButton } from "@mui/material";
 
 import LazyLoadingTable from "../../components/LazyLoadingTable";
-import { Dashboard } from "../InvoicePrinter";
+//import { Dashboard } from "../InvoicePrinter";
+import { useRepair } from "../../../hooks/services/useRepair";
 
 import { styles } from "./styles";
 
@@ -129,4 +130,4 @@ const Repair = () => {
     </>
   );
 };
-export default Home;
+export default Repair;
