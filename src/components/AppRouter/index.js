@@ -15,6 +15,7 @@ import ManageInvoice from "../../pages/Invoice/Manage-Invoice";
 import ListDeliveryNote from "../../pages/DeliveryNote/List-DeliveryNote";
 import { DeliveryNotePrinter } from "../../pages/DeliveryNotePrinter";
 import Repair from "../../pages/Repair";
+import Employee from "../../pages/Employee";
 
 const AppRouter = () => {
   const router = createBrowserRouter(
@@ -27,6 +28,7 @@ const AppRouter = () => {
         <Route path="deliveryNote" element={<ListDeliveryNote />} />
         <Route path="deliveryNotePrinter" element={<DeliveryNotePrinter />} />
         <Route path="repair" element={<Repair />} />
+        <Route path="employee" element={<Employee />} />
       </Route>
     )
   );
