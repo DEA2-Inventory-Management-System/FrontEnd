@@ -217,7 +217,7 @@ const ListPurchaseOrder = () => {
               <LazyLoadingTable
                 columns={columns}
                 data={filteredRequestArray}
-                hiddenColumns={["id", "date"]}
+                //hiddenColumns={["id", "date"]}
                 maxHeightInRows={10}
                 onClickTableRow={(index, row) => {
                   console.log(index, row);
