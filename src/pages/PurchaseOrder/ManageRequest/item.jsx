@@ -20,7 +20,7 @@ const columns = [
   {
     Header: "Quantity",
     accessor: "quantity",
-    width: "15%",
+    width: "20%",
   },
 ];
 

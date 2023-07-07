@@ -29,7 +29,7 @@ export const styles = makeStyles((theme) => ({
   menuIconRoot: {
     width: "16px",
     height: "16px",
-    color: "#808CA3",
+    color: "#808CA4",
     marginRight: "15px",
   },
   editIconRoot: {
